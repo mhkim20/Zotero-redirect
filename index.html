@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to Zotero...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const target = params.get("url");
+    if (target && target.startsWith("zotero://")) {
+      window.location.replace(target);
+    }
+  </script>
+</head>
+<body>
+  <p>Opening Zotero...</p>
+</body>
+</html>
